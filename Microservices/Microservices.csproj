@@ -1,0 +1,16 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <LangVersion>9</LangVersion>
+        <WarningLevel>0</WarningLevel>
+        <ApplicationIcon />
+        <OutputType>Exe</OutputType>
+        <StartupObject />
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Polly" Version="7.2.3" />
+    </ItemGroup>
+
+</Project>

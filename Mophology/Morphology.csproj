@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <Nullable>enable</Nullable>
+        <LangVersion>latest</LangVersion>
+        <TargetFramework>netcoreapp3.1</TargetFramework>
+        <OutputType>Exe</OutputType>
+    </PropertyGroup>
+
+    <Target Name="UnzipDictionary" BeforeTargets="BeforeBuild">
+        <Unzip SourceFiles="Resources\dictionary.zip" DestinationFolder="$(OutDir)/Resources" SkipUnchangedFiles="true" />
+    </Target>
+
+    <ItemGroup>
+      <None Update="Resources\test.txt">
+        <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+</Project>
